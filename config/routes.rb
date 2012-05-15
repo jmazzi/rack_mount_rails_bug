@@ -1,6 +1,6 @@
 class RackTest
   def call(env)
-    [200, {}, [env['PATH_INFO']]]
+    [200, {}, ["Rails #{Rails.version} - #{env['PATH_INFO']}"]]
   end
 end
 
